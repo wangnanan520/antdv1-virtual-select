@@ -1,7 +1,17 @@
 {
   "name": "antdv1-virtual-select",
   "version": "0.1.0",
-  "private": true,
+  "description": "virtual-select",
+  "keywords": [
+    "vue",
+    "ant",
+    "design",
+    "antd",
+    "antd1.x",
+    "virtual-select",
+    "下拉框",
+    "虚拟下拉框"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
