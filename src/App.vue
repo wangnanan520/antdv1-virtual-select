@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import virtualSelect from "./components/VartualSelect/select";
+import virtualSelect from "./components/VirtualSelect/select";
 
 export default {
   name: "App",

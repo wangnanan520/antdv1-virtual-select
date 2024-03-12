@@ -15,15 +15,32 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
+## Using npm or yarn
+
 ```
-yarn build
+yarn add avirtualselect
 ```
 
-### Lints and fixes files
 ```
-yarn lint
+npm install avirtualselect --save
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### main.js
+
+```
+import avirtualselect from 'avirtualselect'
+
+Vue.use(avirtualselect)
+```
+
+### Use
+
+```
+ <virtualSelect
+    style="width: 300px"
+    v-model="value"
+    allowClear
+    showArrow
+    :options="options"
+/>
+```

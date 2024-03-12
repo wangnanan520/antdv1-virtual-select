@@ -15,10 +15,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib ./src/package/index.js --name virtualSelect --dest virtualSelect"
   },
   "dependencies": {
     "ant-design-vue": "1.7.8",
+    "avirtualselect": "^1.0.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
