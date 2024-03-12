@@ -1,19 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <virtualSelect
+      style="width: 300px"
+      v-model="value"
+      allowClear
+      showArrow
+      :options="options"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import virtualSelect from "./components/VartualSelect/select";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    virtualSelect,
+  },
+  data() {
+    const options = Array.from({ length: 20000 }, (_, index) => ({
+      value: index,
+      label: `Option ${index}`,
+    }));
+    return {
+      options,
+      value: '',
+    };
+  },
+};
 </script>
 
 <style>
