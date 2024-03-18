@@ -1,0 +1,11 @@
+# 忽略所有文件和目录
+*
+
+# 不忽略 lib 目录
+!lib/
+
+# 不忽略 package.json 文件
+!package.json
+
+# 不忽略 README 文件
+!README.md
